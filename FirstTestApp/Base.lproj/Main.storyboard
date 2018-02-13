@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Oes-RY-x92">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H7M-p3-qJJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -102,5 +103,202 @@
             </objects>
             <point key="canvasLocation" x="584.79999999999995" y="150.67466266866569"/>
         </scene>
+        <!--Cat Years Controller-->
+        <scene sceneID="TMO-RW-mLf">
+            <objects>
+                <viewController id="I0i-IV-EBv" customClass="CatYearsController" customModule="FirstTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dAX-vT-YN5"/>
+                        <viewControllerLayoutGuide type="bottom" id="06S-qb-owx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cdN-fl-Zeb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cat Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vR7-Dn-poK">
+                                <rect key="frame" x="106" y="50" width="162" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How old is your cat?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zko-xL-omZ">
+                                <rect key="frame" x="76" y="111" width="223" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CTR-nI-Prc">
+                                <rect key="frame" x="122" y="156" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUE-Mz-9rQ">
+                                <rect key="frame" x="76" y="206" width="223" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Age in cat years"/>
+                                <connections>
+                                    <action selector="getCatYearsPressed:" destination="I0i-IV-EBv" eventType="touchUpInside" id="7Na-5N-uMe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXV-RQ-AAY">
+                                <rect key="frame" x="36" y="259" width="305" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="catty.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="K3v-gY-s6c">
+                                <rect key="frame" x="47" y="379" width="282" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="catYears" destination="CTR-nI-Prc" id="5M0-ZL-8VP"/>
+                        <outlet property="catYearsDescription" destination="FXV-RQ-AAY" id="KOs-6a-slS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mqc-Hd-w5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1445.5999999999999" y="172.26386806596702"/>
+        </scene>
+        <!--Guess Fingers Count-->
+        <scene sceneID="sKv-t3-ikN">
+            <objects>
+                <viewController id="Kdb-u0-cUN" customClass="GuessFingersCount" customModule="FirstTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MvZ-ED-9rk"/>
+                        <viewControllerLayoutGuide type="bottom" id="sfu-br-t9W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JOp-PS-Bp8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cu1-mS-7p2">
+                                <rect key="frame" x="16" y="127" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Count CHeck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np8-Ss-RYd">
+                                <rect key="frame" x="102" y="76" width="150" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eez-m6-ri6">
+                                <rect key="frame" x="68" y="214" width="218" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXm-59-BP7">
+                                <rect key="frame" x="89" y="176" width="182" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Check"/>
+                                <connections>
+                                    <action selector="checkValue:" destination="Kdb-u0-cUN" eventType="touchUpInside" id="mFK-jN-24B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="fingersCount" destination="cu1-mS-7p2" id="pCK-eb-z0J"/>
+                        <outlet property="rightorwrong" destination="eez-m6-ri6" id="CRT-Y7-MR5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPJ-Qi-JW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2152.8000000000002" y="160.56971514242881"/>
+        </scene>
+        <!--Check Prime View-->
+        <scene sceneID="hxf-UE-YQ2">
+            <objects>
+                <viewController id="H7M-p3-qJJ" customClass="CheckPrimeView" customModule="FirstTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VF3-aN-NPA"/>
+                        <viewControllerLayoutGuide type="bottom" id="5lM-hA-3jv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AGr-0G-d3M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check whether Prime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHR-Ra-sqk">
+                                <rect key="frame" x="49" y="70" width="276.5" height="32.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32.5" id="ECh-ge-y1C"/>
+                                    <constraint firstAttribute="width" constant="276.5" id="Ghb-b5-SAL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aRI-9c-YBw">
+                                <rect key="frame" x="49" y="148" width="277" height="21"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lebel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGB-rz-c4q">
+                                <rect key="frame" x="66" y="208" width="243" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCI-HZ-86b">
+                                <rect key="frame" x="103" y="255" width="169" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="169" id="Wu1-HQ-jY1"/>
+                                    <constraint firstAttribute="height" constant="44" id="auR-7t-wBx"/>
+                                    <constraint firstAttribute="width" constant="169" id="tyb-3e-BhE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Check">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkButtonPressed:" destination="H7M-p3-qJJ" eventType="touchUpInside" id="HOw-iJ-wO1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cHR-Ra-sqk" firstAttribute="centerX" secondItem="AGr-0G-d3M" secondAttribute="centerX" id="4kC-7t-BHx"/>
+                            <constraint firstItem="aRI-9c-YBw" firstAttribute="centerX" secondItem="AGr-0G-d3M" secondAttribute="centerX" id="767-EW-Vqd"/>
+                            <constraint firstItem="xGB-rz-c4q" firstAttribute="leading" secondItem="AGr-0G-d3M" secondAttribute="leadingMargin" constant="50" id="98l-fq-fUA"/>
+                            <constraint firstItem="cHR-Ra-sqk" firstAttribute="top" secondItem="VF3-aN-NPA" secondAttribute="bottom" constant="50" id="FwW-HS-dNV"/>
+                            <constraint firstItem="aRI-9c-YBw" firstAttribute="leading" secondItem="AGr-0G-d3M" secondAttribute="leadingMargin" constant="33" id="QvQ-QM-3sN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aRI-9c-YBw" secondAttribute="trailing" constant="33" id="ZEP-q1-Bxb"/>
+                            <constraint firstItem="xGB-rz-c4q" firstAttribute="top" secondItem="aRI-9c-YBw" secondAttribute="bottom" constant="39" id="bF2-1h-D8x"/>
+                            <constraint firstItem="aRI-9c-YBw" firstAttribute="top" secondItem="cHR-Ra-sqk" secondAttribute="bottom" constant="45.5" id="baP-O5-bxQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xGB-rz-c4q" secondAttribute="trailing" constant="50" id="iDl-lQ-wIi"/>
+                            <constraint firstItem="WCI-HZ-86b" firstAttribute="centerX" secondItem="AGr-0G-d3M" secondAttribute="centerX" id="kvP-KE-7dm"/>
+                            <constraint firstItem="WCI-HZ-86b" firstAttribute="top" secondItem="xGB-rz-c4q" secondAttribute="bottom" constant="26.5" id="wG7-gY-N1I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkPrimeText" destination="aRI-9c-YBw" id="WNi-KI-Y24"/>
+                        <outlet property="printIsPrimeLabel" destination="xGB-rz-c4q" id="fK8-S9-D2I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cv5-YM-Rxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2152.8000000000002" y="804.64767616191909"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="catty.jpg" width="600" height="399"/>
+    </resources>
 </document>

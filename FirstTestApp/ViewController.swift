@@ -19,7 +19,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonPressed(_ sender: Any) {
-    self.textField.text = editText.text;
+        if let name = editText.text {
+            print("inside")
+            textField.text = name
+        }
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
