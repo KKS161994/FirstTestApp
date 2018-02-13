@@ -221,6 +221,49 @@
             </objects>
             <point key="canvasLocation" x="2152.8000000000002" y="160.56971514242881"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="v0C-ad-xSw">
+            <objects>
+                <viewController id="4gf-8n-M4A" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8st-JW-dIq"/>
+                        <viewControllerLayoutGuide type="bottom" id="TQ1-hh-Ib9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SE2-LI-Q5E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I5i-Kv-TmD">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="NavBar" id="vvL-ip-LPd">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="bDf-o2-sCh">
+                                            <color key="tintColor" red="0.0" green="0.81507703990000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="Hcb-lH-OMS"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iAb-He-8Fv">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="reply" id="bE6-nn-tAm"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="AXy-qb-ipg"/>
+                                    <barButtonItem systemItem="compose" id="0S1-tu-cNg"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="HMY-ne-OmT"/>
+                                    <barButtonItem systemItem="trash" id="6wj-iI-f1B"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Paw-lV-8jh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2767" y="366"/>
+        </scene>
         <!--Check Prime View-->
         <scene sceneID="hxf-UE-YQ2">
             <objects>
@@ -295,7 +338,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cv5-YM-Rxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2152.8000000000002" y="804.64767616191909"/>
+            <point key="canvasLocation" x="2153" y="976"/>
         </scene>
     </scenes>
     <resources>
